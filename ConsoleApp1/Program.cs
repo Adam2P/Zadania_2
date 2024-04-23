@@ -6,5 +6,7 @@ class program
     {
         Tablice tablice = new Tablice();
         tablice.Powitanie();
+
+        int[] tab = tablice.Stworz_tablice();
     }
 }
