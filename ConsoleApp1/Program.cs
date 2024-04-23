@@ -8,5 +8,8 @@ class program
         tablice.Powitanie();
 
         int[] tab = tablice.Stworz_tablice();
+        
+        Console.Clear();
+        tablice.Wyswietl_Tablice(tab);
     }
 }

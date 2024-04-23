@@ -29,5 +29,15 @@ namespace ConsoleApp1
             return ints;
 
         }
+
+        public void Wyswietl_Tablice(int[] tab)
+        {
+            
+            foreach (int i in tab)
+            {
+                Console.Write(i + ", ");
+            }
+            Console.WriteLine();
+        }
     }
 }
