@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     public class Tablice
     {
-         
+
         public void Powitanie()
         {
             Console.WriteLine("Witaj w pliku tablice");
@@ -32,7 +32,7 @@ namespace ConsoleApp1
 
         public void Wyswietl_Tablice(int[] tab)
         {
-            
+
             foreach (int i in tab)
             {
                 Console.Write(i + ", ");
@@ -42,7 +42,7 @@ namespace ConsoleApp1
 
         public void SortujBabelkowe(int[] tab)
         {
-            for (int i = 0;i < tab.Length;i++) 
+            for (int i = 0; i < tab.Length; i++)
             {
                 for (int j = 1; j < tab.Length; j++)
                 {
@@ -54,10 +54,25 @@ namespace ConsoleApp1
                     }
                 }
 
-                    
 
-                
+
+
             }
+        }
+
+        public bool Przeszukiwanie_Tablicy(int k, int[] tab)
+        {
+            for (int i = 0; i < tab.Length; i++)
+            {
+                if (tab[i] == k)
+                {
+                    Console.WriteLine("Element jest w tablicy");
+                    return true;
+                }
+
+            }
+            Console.WriteLine("Elementu nie było w tablicy");
+            return false;
         }
     }
 }
